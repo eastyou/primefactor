@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primefactor"
+version = "0.1.0"
+description = "质因数分解与因数树：交互式分解、因数列表与可打印 A4 练习"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "prime-factorization", "factor-tree", "worksheet", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+primefactor = "primefactor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/primefactor"
+Source = "https://github.com/eastyou/primefactor"
+
+[tool.setuptools]
+packages = ["primefactor"]
